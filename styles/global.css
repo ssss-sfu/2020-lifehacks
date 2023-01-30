@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap');
+
+:root {
+  --navy: #1B3146;
+  --yellow: #FFDF00;
+  --green: #24CD8F;
+  --white: #fff;
+  --darker-navy: #0E1923;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--darker-navy);
+}
+
+h1,h2,h3,h4 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.wrapper {
+  padding-right: 7rem;
+  padding-left: 7rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  .wrapper {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+} 
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+} 
+
+.button {
+  background-color: var(--green);
+  padding: 0.5rem 1.5rem;
+  border-radius: 100rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button:hover, .button:active {
+  background-color: var(--yellow);
+  color: var(--navy);
+  transition: all 0.3s;
+}

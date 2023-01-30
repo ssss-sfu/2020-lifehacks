@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Life Hacks 2020</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/sponsors.css">
+  <link rel="stylesheet" href="./styles/faq.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+  <div class="wrapper menu">
+    <img src="./images/logo.png" alt="LifeHacks logo">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+    <ul>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#sponsors" onclick="closeMenu()">Sponsors</a></li>
+      <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+      <li><a href="https://ssss-sfu.github.io/" target="_blank">SSSS</a></li>
+      <li><a target="_blank" class="button">Registration Closed</a></li>
+    </ul>
+  </div>
+
+  <nav id="nav" class="wrapper nav">
+    <h3><a href="#hero">LifeHacks</a></h3>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://ssss-sfu.github.io/" target="_blank">SSSS</a></li>
+      <li><a target="_blank" class="button">Registration Closed</a></li>
+    </ul>
+    <button class="openbtn" onclick="openMenu()">&#9776;</button>
+  </nav>
+
+  <div id="hero" class="wrapper">
+    <a target="_blank" class="button"> Registration Closed </a>
+  </div>
+
+  <div id="about" class="wrapper">
+    <div class="about__section">
+      <div>
+        <h3>Life Hacks</h3>
+        <p>Life Hacks is all about increasing productivity and efficiency, in all walks of life. Participants have
+          12-hours to create a product that makes everyday life more convenient. They can create web applications,
+          mobile
+          applications, hardware hacks and much more.
+        </p>
+        <div class="about__section--stats">
+          <div>
+            <i class="ion-md-alarm"></i>
+            <h4>12 Hours</h4>
+          </div>
+          <div>
+            <i class="ion-md-people"></i>
+            <h4>100+ Participants</h4>
+          </div>
+          <div>
+            <i class="ion-md-pin"></i>
+            <h4>SFU Surrey</h4>
+          </div>
+        </div>
+
+      </div>
+      <img src="./images/about-lifehacks.png" alt="Life Hacks photo">
+    </div>
+    <div class="about__section">
+      <img src="./images/about-hackthe90s.png" alt="Hack the 90s photo">
+      <div>
+        <h3>Hack the 90s</h3>
+        <p>Last year we took it old school with Hack the 90s! Tamagotchi clones, MSN messenger revival, you name it -
+          2019's hackathon participants were tasked with developing software from the 90s.
+        </p>
+      </div>
+    </div>
+    <div class="about__section">
+      <div>
+        <h3>Software Systems Student Society</h3>
+        <p>Software Systems is a program in the School of Computing Science, based in SFU Surrey. Although a
+          comprehensive
+          program, Software Systems focuses more on the applied aspect of computer science. Some of the concepts taught
+          are object-oriented programming, embedded systems and web-based information systems.
+        </p>
+      </div>
+      <img src="./images/about-ssss.png" alt="SSSS group photo">
+    </div>
+  </div>
+
+  <div id="sponsors" class="wrapper">
+    <h3>Our Sponsors</h3>
+    <div class="tier-title">
+      <a href="https://ttt.studio/" target="_blank"><img src="./images/sponsors/tttstudios.png"
+          alt="TTT Studios logo"></a>
+    </div>
+    <div class="tier-2">
+      <a href="https://www.axiomzen.co/" target="_blank"><img src="./images/sponsors/axiomzen.png"
+          alt="Axiom Zen logo"></a>
+      <a href="https://www.safe.com/" target="_blank"><img src="./images/sponsors/safesoftware.png"
+          alt="Safe Software logo"></a>
+    </div>
+    <div class="tier-1">
+      <a href="https://www.loginradius.com/" target="_blank"><img src="./images/sponsors/loginradius.png"
+          alt="Login Radius logo"></a>
+      <a href="https://www.essoft.com/" target="_blank"><img src="./images/sponsors/essential.png"
+          alt="Essential Software Solutions logo"></a>
+    </div>
+    <div class="tier-food">
+      <a href="http://www.papajohns.ca/" target="_blank"><img src="./images/sponsors/papajohns.png"
+          alt="Papa Johns logo"></a>
+    </div>
+  </div>
+
+  <div id="faq" class="wrapper">
+    <h3>Frequently Asked Questions <img src="./images/faq-marks.png" alt="Exclamation and question marks"></h3>
+    <div class="faq__questions">
+
+        <button class="accordion">What is a Hackathon?</button>
+        <div class="accordion__panel">
+            <p>
+                A hackathon is an event where programmers, engineers and designers collaborate intensively to create a project in a limited amount of time. 
+                In the hackathon, you will come up with an original idea together with your team, develop and present it to your peers and judges.
+                A example "hack" could be a website, a game, a robot, or a mobile app that applies to the theme of the hackathon.
+            </p>
+        </div>
+
+      <button class="accordion">What is Life Hacks?</button>
+      <div class="accordion__panel">
+        <p>Life Hacks is all about increasing productivity and efficiency, in all walks of life. Participants have
+          12-hours to create a product that makes everyday life more convenient. They can create web applications,
+          mobile
+          applications, hardware hacks and much more.</p>
+      </div>
+
+      <button class="accordion"> What is the situation with Teams? </button>
+      <div class="accordion__panel">
+        <p> 
+            Everyone must have a group of 3-4 people. 
+            Teams can be premade, or made during the hackathon.
+            Official Team Creation will take place during the hackathon, 
+            so that attendees who drop out or dont have groups
+            can form or join a team.
+        </p>
+      </div>
+
+      <button class="accordion">Can I continue from a previous project?</button>
+      <div class="accordion__panel">
+        <p>No, all projects must be built from scratch.</p>
+      </div>
+
+      <button class="accordion">What if I don't have any experience?</button>
+      <div class="accordion__panel">
+        <p>Systems Hacks is a beginner-friendly hackathon and we welcome students of all levels. There will be mentors
+          to help you out if you have any problems or questions.</p>
+      </div>
+
+      <button class="accordion">Who can participate?</button>
+      <div class="accordion__panel">
+        <p>Students of any education level are eligible to participate in System Hacks.</p>
+      </div>
+
+      <button class="accordion">Can I work alone?</button>
+      <div class="accordion__panel">
+        <p>You can but will not be eligible for judging. Hackathons are a time to breed innovation and collaboration,
+          and a great place to connect with other hackers. We want to encourage that with Systems Hacks!
+        </p>
+      </div>
+
+      <button class="accordion">Is this event free?</button>
+      <div class="accordion__panel">
+          <p>
+            Yes!
+          </p>
+      </div>
+
+      <button class="accordion"> How can I prepare? </button>
+      <div class="accordion__panel">
+          <p>
+            Think of an example Idea/Solution.
+            Imagine how you would build it during the event, and learn what would be necessary to acheive it.
+            Mentors are available at the hackathon to teach and guide you,
+            and the event is an opportunity to learn spontaneously and be creative!
+          </p>
+      </div>
+
+      <button class="accordion"> What should I bring? </button>
+      <div class="accordion__panel">
+          <p>
+            Toiletries, laptop, chargers, power bars, water bottles, tupperware + utensils, and comfortable clothing. 
+            Please bring external materials that you might require, such as VR, arduinos + electronics, game controllers, etc.
+          </p>
+      </div>
+
+    </div> <!-- FAQ Questions -->
+  </div> <!-- FAQ -->
+
+  <footer class="wrapper footer">
+    <img src="./images/footer-img.png" alt="Idea Computer" />
+    <div>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/ssss.sfu/" target="_blank"><i class="icon ion-logo-facebook"></i></a>
+        <a href="https://twitter.com/ssss_sfu" target="_blank"><i class="icon ion-logo-twitter"></i></a>
+        <a href="https://www.instagram.com/ssss.sfu/" target="_blank"><i class="icon ion-logo-instagram"></i></a>
+      </div>
+      <ul>
+        <li><a href="https://www.facebook.com/ssss.sfu/" target="_blank">Contact Us</a></li>
+        <li><a href="#about">About the Event</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="https://ssss-sfu.github.io/" target="_blank">SSSS</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="./scripts/smooth_scroll.js" async defer></script>
+  <script src="./scripts/navbar_hide_scroll.js" async defer></script>
+  <script src="./scripts/faq_accordion.js" async defer></script>
+  <script src="./scripts/menu.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+@import "global.css";
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  z-index: 10;
+  color: var(--navy);
+  transition: top 0.5s, box-shadow 0.3s, color 0.2s, background-color 0.3s;
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 2.5rem;
+  font-weight: 700;
+}
+
+.nav a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.nav a:hover, .nav a:active {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.nav .button {
+  color: var(--white);
+}
+
+.nav .button:hover, .nav .button:active{
+  opacity: 1;
+  background-color: var(--yellow);
+  color: var(--navy);
+  transition: all 0.3s;
+}
+
+.nav--scrolled {
+  background-color: var(--darker-navy);
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.15);
+}
+
+.nav .openbtn {
+  background: none;
+  border: none;
+  color: var(--darker-navy);
+  font-size: 1.5em;
+  display: none;
+  transform: translateY(-0.25em);
+}
+
+.nav--scrolled a, .nav--scrolled .openbtn {
+  color: var(--white);
+}
+
+.nav .openbtn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav ul {
+    display: none;
+  }
+
+  .nav .openbtn {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    /* padding-top: 15rem; */
+    padding-bottom: 0;
+  }
+} 
+
+/*-------------------------- MENU --------------------------*/
+.menu {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  transition: 0.75s;
+  transform: translateX(100em);
+}
+
+.menu img {
+  width: 15em;
+  margin-bottom: 1.5em;
+}
+
+.menu ul li {
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--darker-navy);
+}
+
+.menu ul li:nth-of-type(5) {
+  margin-top: 1.5em;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0.85em;
+  right: 0.85em;
+  font-size: 2em;
+  margin-left: 4em;
+  color: var(--darker-navy);
+  text-decoration: none;
+}
+
+.menu--opened {
+  transform: translateY(0);
+}

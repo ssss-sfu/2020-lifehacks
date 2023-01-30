@@ -1,0 +1,104 @@
+@import "global.css";
+
+.about__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding-top: 10rem;
+}
+
+.about__section h3::after {
+  content: '_';
+  color: var(--green);
+}
+
+.about__section img {
+  border-radius: 0.25em;
+  width: 40%;
+  margin-left: 3rem;
+}
+
+.about__section:nth-of-type(2) h3::after {
+  color: var(--yellow);
+}
+
+.about__section:nth-of-type(2) img {
+  margin-right: 3rem;
+  margin-left: 0;
+}
+
+.about__section--stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about__section--stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 2.5em;
+  margin-right: 2.5em;
+}
+
+.about__section--stats h4, .about__section--stats i {
+  color: var(--green)
+}
+
+.about__section--stats h4 {
+  font-size: 1.5em;
+}
+
+.about__section--stats i {
+  font-size: 4em;
+}
+
+.about__section--stats h4 {
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about__section {
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+
+  .about__section:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+
+  .about__section img {
+    border-radius: 0.25em;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .about__section:nth-of-type(2) img {
+    margin-right: 0;
+  }
+} 
+
+@media only screen and (max-width: 700px) {
+  .about__section {
+    padding-top: 3rem;
+  }
+
+  .about__section--stats div {
+    margin-top: 1em;
+    margin-right: 1.25em;
+  }
+
+  .about__section--stats h4 {
+    font-size: 1em;
+  }
+  
+  .about__section--stats i {
+    font-size: 2.5em;
+  }
+} 
